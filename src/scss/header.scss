@@ -1,0 +1,57 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+
+  width: 100%;
+  padding: 15px 0;
+
+  transition: background-color .25s;
+  &.scroll {
+    background-color: rgba($color: #573251, $alpha: .9);
+  }
+
+  &__row {
+    display: flex;
+    column-gap: 27px;
+    align-items: center;
+  }
+
+  &__nav {
+    flex-grow: 1;
+  }
+
+  &__logo {
+    margin-right: auto;
+    @media (max-width:700px) {
+      width: 126px;
+      height: 27px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    column-gap: 26px;
+
+    @media (max-width:700px) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    width: auto;
+    padding: 10px 27px;
+
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  &__burger {
+    display: none;
+
+     @media (max-width:1200px) {
+      display: block;
+    }
+  }
+}
+
